@@ -8,10 +8,11 @@
     font-size: 15px;
     line-height: 1.5;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 .container{
-    background-image: url(cover.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(cover.jpg);
     height: 100dvh;
     background-position: center;
     background-size: cover;
@@ -19,6 +20,7 @@
 .navbar{
     display: flex;
     justify-content: space-between;
+    padding: 10px 20px;
 }
 .navbar img{
     -webkit-filter: invert(1);
@@ -28,13 +30,16 @@
     /* background-color: blueviolet; */
     display: flex;
     gap: 1rem;
-    padding: 20px;
+    padding: 10px;
     justify-content: right;
+    /* background-color: blue; */
+    align-items: end;
 }
 .navbar ul li{
     list-style: none;
-    background-color: blue;
-    padding: 10px 10px;
+    /* background-color: rgba(0, 0, 0, 0.884); */
+    padding: 10px 20px;
+    height: 50px;
     cursor: pointer;
 }
 .navbar ul li a:hover{
@@ -44,5 +49,7 @@
 .navbar ul li a{
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
 
