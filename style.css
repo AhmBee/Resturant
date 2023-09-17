@@ -10,10 +10,22 @@
     box-sizing: border-box;
 }
 
-header{
-    background-color: blueviolet;
+.container{
+    background-image: url(cover.jpg);
+    height: 100dvh;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar img{
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
 .navbar ul{
+    /* background-color: blueviolet; */
     display: flex;
     gap: 1rem;
     padding: 20px;
@@ -23,6 +35,11 @@ header{
     list-style: none;
     background-color: blue;
     padding: 10px 10px;
+    cursor: pointer;
+}
+.navbar ul li a:hover{
+    color: red;
+    transition: 0.5s;
 }
 .navbar ul li a{
     text-decoration: none;
