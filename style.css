@@ -17,10 +17,24 @@
     background-position: center;
     background-size: cover;
 }
+/* @media screen and (max-width: 1100px) {
+    .navbar ul{
+        display: none !important;
+    }
+} */
+
+.change-color{
+    background-color: black;
+    transition: 0.5s;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 80px;
+    position: fixed;
+    width: 100svw;
+    /* background-color: blueviolet; */
+
 }
 .navbar img{
     -webkit-filter: invert(1);
@@ -32,24 +46,60 @@
     gap: 1rem;
     padding: 10px;
     justify-content: right;
-    /* background-color: blue; */
     align-items: end;
 }
 .navbar ul li{
     list-style: none;
-    /* background-color: rgba(0, 0, 0, 0.884); */
-    padding: 10px 20px;
-    height: 50px;
-    cursor: pointer;
 }
 .navbar ul li a:hover{
     color: red;
     transition: 0.5s;
 }
 .navbar ul li a{
+    padding: 30px 20px;
+    /* background-color: rgba(0, 0, 0, 0.884); */
+    height: 50px;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
     font-size: 1.2em;
+}
+
+.cont1{
+    background-color: #efefef;
+    height: 100dvh;
+}
+.cont3{
+    background-color: #ffff;
+    height: 100dvh;
+}
+.cont2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(cont2.jpg);
+    height: 50dvh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+/************ Footer CSS ************/
+.fCont{
+    background-color: #222222;
+}
+.fCont h2 {
+    color: #ffff;
+    text-transform: uppercase;
+}
+.fCont p,li {
+    color: #999999;
+}
+
+.fContB{
+    background-color: #111111;
 }
 
