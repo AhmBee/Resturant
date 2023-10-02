@@ -2,14 +2,15 @@
     --color1: #FFF;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     font-size: 15px;
     line-height: 1.5;
     box-sizing: border-box;
-    font-family: monospace;
-}
+    font-family: 'Poppins', sans-serif;}
 
 .container{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(cover.jpg);
@@ -25,6 +26,10 @@
 
 .change-color{
     background-color: black;
+    transition: 0.5s;
+}
+.change-color2{
+    background-color: transparent;
     transition: 0.5s;
 }
 .navbar{
@@ -88,8 +93,14 @@
 
 
 /************ Footer CSS ************/
+footer i{
+    margin-right: 15px;
+}
 .fCont{
     background-color: #222222;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .fCont h2 {
     color: #ffff;
@@ -97,9 +108,51 @@
 }
 .fCont p,li {
     color: #999999;
+    margin-bottom: 10px;
+}
+.fCont a{
+    color: #ec1d25;
+    text-decoration: none;
 }
 
 .fContB{
     background-color: #111111;
 }
+.fh1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.fcol1, .fTwit, .fGallery{
+    width: 33.333%;
+}
+.fDate{
+    font-size: 12px;
+    color: #555555;
+}
+
+.fContB{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+.fContB1{
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+.fContB1 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.fContB1 ul li{
+    list-style: none;
+}
+
+
 
